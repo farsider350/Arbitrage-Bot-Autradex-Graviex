@@ -60,7 +60,7 @@ Example:
 	        }        
         });
 
-For a more detailed example, please see "mm.js" in the git directory.
+For a more detailed example, please see "marketmaker.js" in the git directory.
 
 # Setup and Run the Arbitrage Bots
 Install:
@@ -77,3 +77,10 @@ Install:
     pm2 start dogebtcarb.js
     pm2 log
 	
+Available Bots as of latest commit:
+    -------------------
+    dogebtcarb.js
+    dgbbtcarb.js
+    rvnbtcarb.js
+    -------------------
+    marketmaker.js
