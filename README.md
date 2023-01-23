@@ -78,9 +78,9 @@ Install:
     pm2 log
 	
 Available Bots as of latest commit:
-    -------------------
+
     dogebtcarb.js
     dgbbtcarb.js
     rvnbtcarb.js
-    -------------------
+
     marketmaker.js
