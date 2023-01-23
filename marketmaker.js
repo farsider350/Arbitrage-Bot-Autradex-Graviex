@@ -2,7 +2,7 @@ var autradex = require("./autradex.js");
 
 autradex.accessKey = "";
 autradex.secretKey = "";
-
+var loop = 30;
 /*
 autradex.allMarketsTicker(function(res){
 	if(!res.error){
@@ -21,7 +21,6 @@ setInterval(function() {
 	var theMarket = "dogebtc";
 	var increase = 0.000000001;
 	var volume = 100;
-    var loop = 30;
 
 	//CLOSE ALL ORDERS
 	//

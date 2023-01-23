@@ -10,6 +10,8 @@ autradex.secretKey = "";
 // Graviex
 graviex.accessKey = "";
 graviex.secretKey = "";
+// Loop Time in Seconds
+var loop = 30;
 
 // Config Market
 setInterval(function() {
@@ -17,7 +19,6 @@ setInterval(function() {
 	var theMarket = "dogebtc";
 	var increase = "0.00000001"; // The most allowed increase in overlap
 	var volume = "25"; // The volume you wish to trade with
-	var loop = "30"; // The time in seconds between each check
 
 
 // Uncomment below to see all available markets in console log

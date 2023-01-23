@@ -8,6 +8,7 @@ autradex.accessKey = "";
 autradex.secretKey = "";
 graviex.accessKey = "";
 graviex.secretKey = "";
+var loop = 30;
 
 /*
 autradex.allMarketsTicker(function(res){
@@ -27,8 +28,6 @@ setInterval(function() {
 	var theMarketGrav = "dgbbtc";
 	var increase = "0.00000001";
 	var volume = "36";
-	var loop = "30";
-
 
 //CLOSE ALL ORDERS
 //

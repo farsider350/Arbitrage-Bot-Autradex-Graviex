@@ -8,7 +8,7 @@ autradex.accessKey = "";
 autradex.secretKey = "";
 graviex.accessKey = "";
 graviex.secretKey = "";
-
+var loop = 30;
 /*
 autradex.allMarketsTicker(function(res){
 	if(!res.error){
@@ -26,8 +26,6 @@ setInterval(function() {
 	var theMarket = "rvnbtc";
 	var increase = "0.000000003";
 	var volume = "88";
-	var loop = "30";
-
 
 //CLOSE ALL ORDERS
 //
