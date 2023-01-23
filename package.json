@@ -1,9 +1,13 @@
 {
-  "name": "autradex",
-  "author": "Scott Lindh",
+  "name": "Arbitrage Bot",
+  "author": "nightanticipate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Autradex and Graviex Arbitrage Bot",
   "main": "autradex.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nightanticipate/Arbitrage-Bot-Autradex-Graviex.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
