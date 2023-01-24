@@ -87,10 +87,10 @@ setInterval(function() {
 								console.log("Will Buy From Graviex At: " + buyingAutx);
 								console.log("Will Sell To Autradex At: " + sellingGrav);
 // Buy From Graviex
-								graviex.createOrder(theMarket, "buy", volume, buyingAutx, function(res){
+								graviex.createOrder(theMarket, "buy", volume, sellingGrav, function(res){
 									if(!res.error){
 // Sell To Autradex
-								autradex.createOrder(theMarket, "sell", volume, sellingGrav, function(res2){
+								autradex.createOrder(theMarket, "sell", volume, buyingAutx, function(res2){
 									if(!res.error){
 										console.log(res.id + "|" + res.state + "|" + res.side);
 										console.log(res2.id + "|" + res2.state + "|" + res2.side);
@@ -111,10 +111,10 @@ setInterval(function() {
                                                                 console.log("Will Buy From Autradex At: " + buyingGrav);
                                                                 console.log("Will Sell To Graviex At: " + sellingAutx);
 // Buy From Graviex
-                                                                autradex.createOrder(theMarket, "buy", volume, buyingGrav, function(res){
+                                                                autradex.createOrder(theMarket, "buy", volume, sellingAutx, function(res){
                                                                         if(!res.error){
 // Sell To Autradex
-                                                                graviex.createOrder(theMarket, "sell", volume, sellingAutx, function(res2){
+                                                                graviex.createOrder(theMarket, "sell", volume, buyingGrav, function(res2){
                                                                         if(!res.error){
                                                                                 console.log(res.id + "|" + res.state + "|" + res.side);
                                                                                 console.log(res2.id + "|" + res2.state + "|" + res2.side);

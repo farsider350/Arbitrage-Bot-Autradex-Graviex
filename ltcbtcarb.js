@@ -92,10 +92,10 @@ autradex.allMarketsTicker(function(res){
 								console.log("Will Buy From Graviex At: " + buyingAutx);
                                                                 console.log("Will Sell To Autradex At: " + sellingGrav);
 // Buy From Graviex
-								graviex.createOrder(theMarket, "buy", volume, buyingAutx, function(res){
+								graviex.createOrder(theMarket, "buy", volume, sellingGrav, function(res){
 									if(!res.error){
 // Sell To Autradex
-								autradex.createOrder(theMarket, "sell", volume, sellingGrav, function(res2){
+								autradex.createOrder(theMarket, "sell", volume, buyingAutx, function(res2){
 									if(!res.error){
 										console.log(res.id + "|" + res.state + "|" + res.side);
 										console.log(res2.id + "|" + res2.state + "|" + res2.side);

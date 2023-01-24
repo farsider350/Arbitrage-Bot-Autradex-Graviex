@@ -8,8 +8,8 @@
     "mmSpread": "The order increase amount and final spread 0.00000001",
     "mmVol": "The volume you'd like to place as each trade",
 
-    "///////// Arbitrage Bot Settings - You can use the same keys for each market but ":"",
-    "///////// it is recommended to create them individually":"",
+    "///////// Arbitrage Bot Settings - You can use the same keys for each market":"",
+    "///////// but it is recommended to create them individually":"",
 
     "///////// Digibyte Bitcoin":"pm2 start dgbbtcarb.js",
     "///////// Autradex Keys":"",

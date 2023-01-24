@@ -89,10 +89,10 @@ setInterval(function() {
 								console.log("Will Buy From Graviex At: " + buyingAutx);
                                                                 console.log("Will Sell To Autradex At: " + sellingGrav);
 // Buy From Graviex
-								graviex.createOrder(theMarketGrav, "buy", volume, buyingAutx, function(res){
+								graviex.createOrder(theMarketGrav, "buy", volume, sellingGrav, function(res){
 									if(!res.error){
 // Sell To Autradex
-								autradex.createOrder(theMarketAutx, "sell", volume, sellingGrav, function(res2){
+								autradex.createOrder(theMarketAutx, "sell", volume, buyingAutx, function(res2){
 									if(!res.error){
 										console.log(res.id + "|" + res.state + "|" + res.side);
 										console.log(res2.id + "|" + res2.state + "|" + res2.side);
@@ -113,10 +113,10 @@ setInterval(function() {
                                                                 console.log("Will Buy From Autradex At: " + buyingGrav);
                                                                 console.log("Will Sell To Graviex At: " + sellingAutx);
 // Buy From Graviex
-                                                                autradex.createOrder(theMarketAutx, "buy", volume, buyingGrav, function(res){
+                                                                autradex.createOrder(theMarketAutx, "buy", volume, sellingAutx, function(res){
                                                                         if(!res.error){
 // Sell To Autradex
-                                                                graviex.createOrder(theMarketGrav, "sell", volume, sellingAutx, function(res2){
+                                                                graviex.createOrder(theMarketGrav, "sell", volume, buyingGrav, function(res2){
                                                                         if(!res.error){
                                                                                 console.log(res.id + "|" + res.state + "|" + res.side);
                                                                                 console.log(res2.id + "|" + res2.state + "|" + res2.side);

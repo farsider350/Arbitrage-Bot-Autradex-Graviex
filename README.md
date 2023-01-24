@@ -71,16 +71,21 @@ Install:
     git clone https://github.com/nightanticipate/Arbitrage-Bot-Autradex-Graviex
     cd Arbitrage-Bot-Autradex-Graviex
     npm install
+    cp config,json.example config.json
     nano config.json
     Input your API Keys, adjust volume and allowed spread and loop times
     Ctrl x to save
     pm2 start dogebtcarb.js
     pm2 log
 	
+You'll now be running the doge/btc arbitrage bot, pm2 start the other files once your config is setup
+
 Available Bots as of latest commit:
 
     dogebtcarb.js
     dgbbtcarb.js
+    ltcbtcarb.js
     rvnbtcarb.js
+    customarb.js
 
     marketmaker.js
