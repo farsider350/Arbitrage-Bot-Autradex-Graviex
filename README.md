@@ -71,9 +71,9 @@ Install:
     git clone https://github.com/nightanticipate/Arbitrage-Bot-Autradex-Graviex
     cd Arbitrage-Bot-Autradex-Graviex
     npm install
-    nano dogebtcarb.js
-    Input your API Keys, adjust volume and allowed spread and loop time 
-    Ctrl + X to save
+    nano config.json
+    Input your API Keys, adjust volume and allowed spread and loop times
+    Ctrl x to save
     pm2 start dogebtcarb.js
     pm2 log
 	

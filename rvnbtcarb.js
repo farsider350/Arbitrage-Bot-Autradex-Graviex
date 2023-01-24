@@ -2,13 +2,14 @@
 var autradex = require("./autradex.js");
 var graviex = require("./graviex.js");
 
+const { rvnBtcAutxAccessKey, rvnBtcAutxSecretKey, rvnBtcGravAccessKey, rvnBtcGravSecretKey, rvnBtcArbLoop, rvnBtcArbMarket, rvnBtcArbSpread, rvnBtcArbVol } = require('./config.json');
 
 // Config Access Keys
-autradex.accessKey = "";
-autradex.secretKey = "";
-graviex.accessKey = "";
-graviex.secretKey = "";
-var loop = 30;
+autradex.accessKey = rvnBtcAutxAccessKey;
+autradex.secretKey = rvnBtcAutxSecretKey;
+graviex.accessKey = rvnBtcGravAccessKey;
+graviex.secretKey = rvnBtcGravSecretKey;
+var loop = rvnBtcArbLoop;
 /*
 autradex.allMarketsTicker(function(res){
 	if(!res.error){
@@ -24,8 +25,8 @@ autradex.allMarketsTicker(function(res){
 setInterval(function() {
 	console.log("_________Beginning Arb Discovery For Raven vs Bitcoin_________");
 	var theMarket = "rvnbtc";
-	var increase = "0.000000003";
-	var volume = "88";
+	var increase = rvnBtcArbSpread;
+	var volume = rvnBtcArbVol;
 
 //CLOSE ALL ORDERS
 //

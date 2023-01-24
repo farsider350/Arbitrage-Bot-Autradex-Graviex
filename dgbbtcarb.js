@@ -2,13 +2,14 @@
 var autradex = require("./autradex.js");
 var graviex = require("./graviex.js");
 
+const { dgbBtcAutxAccessKey, dgbBtcAutxSecretKey, dgbBtcArbLoop, dgbBtcArbMarket, dgbBtcArbSpread, dgbBtcArbVol } = require('./config.json');
 
 // Config Access Keys
-autradex.accessKey = "";
-autradex.secretKey = "";
-graviex.accessKey = "";
-graviex.secretKey = "";
-var loop = 30;
+autradex.accessKey = dgbBtcAutxAccessKey;
+autradex.secretKey = dgbBtcAutxSecretKey;
+graviex.accessKey = dgbBtcGravAccessKey;
+graviex.secretKey = dgbBtcGravSecretKey;
+var loop = dgbBtcArbLoop;
 
 /*
 autradex.allMarketsTicker(function(res){
@@ -26,8 +27,8 @@ setInterval(function() {
 	console.log("_________Beginning Arb Discovery For Digibyte vs Bitcoin_________");
 	var theMarketAutx = "babtc";
 	var theMarketGrav = "dgbbtc";
-	var increase = "0.00000001";
-	var volume = "36";
+	var increase = dgbBtcArbSpread;
+	var volume = dgbBtcArbVol;
 
 //CLOSE ALL ORDERS
 //

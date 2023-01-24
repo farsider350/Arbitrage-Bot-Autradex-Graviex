@@ -2,23 +2,24 @@
 var autradex = require("./autradex.js");
 var graviex = require("./graviex.js");
 
+const { dogeBtcAutxAccessKey, dogeBtcAutxSecretKey, dogeBtcGravAccessKey, dogeBtcGravSecretKey, dogeBtcArbLoop, dogeBtcArbMarket, dogeBtcArbSpread, dogeBtcArbVol } = require('./config.json');
 
 // Config Access Keys
 // Autradex
-autradex.accessKey = "";
-autradex.secretKey = "";
+autradex.accessKey = dogeBtcAutxAccessKey;
+autradex.secretKey = dogeBtcAutxSecretKey;
 // Graviex
-graviex.accessKey = "";
-graviex.secretKey = "";
+graviex.accessKey = dogeBtcGravAccessKey;
+graviex.secretKey = dogeBtcGravSecretKey;
 // Loop Time in Seconds
-var loop = 30;
+var loop = dogeBtcArbVol;
 
 // Config Market
 setInterval(function() {
 	console.log("_________Beginning Arb Discovery for Doge vs Bitcoin_________");
 	var theMarket = "dogebtc";
-	var increase = "0.00000001"; // The most allowed increase in overlap
-	var volume = "25"; // The volume you wish to trade with
+	var increase = dogeBtcArbSpread; // The most allowed increase in overlap
+	var volume = dogeBtcArbVol; // The volume you wish to trade with
 
 
 // Uncomment below to see all available markets in console log

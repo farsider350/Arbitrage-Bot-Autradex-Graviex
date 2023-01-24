@@ -1,8 +1,9 @@
 var autradex = require("./autradex.js");
+const { mmAccessKey, mmSecretKey, mmLoop, mmMarket, mmSpread, mmVol } = require('./config.json');
 
-autradex.accessKey = "";
-autradex.secretKey = "";
-var loop = 30;
+autradex.accessKey = mmAccessKey;
+autradex.secretKey = mmSecretKey;
+var loop = mmLoop;
 /*
 autradex.allMarketsTicker(function(res){
 	if(!res.error){
@@ -18,9 +19,9 @@ autradex.allMarketsTicker(function(res){
 setInterval(function() {
 	console.log("_________________________________________________________");
 		//test market maker bot\
-	var theMarket = "dogebtc";
-	var increase = 0.000000001;
-	var volume = 100;
+	var theMarket = mmMarket;
+	var increase = mmSpread;
+	var volume = mmVol;
 
 	//CLOSE ALL ORDERS
 	//
@@ -44,7 +45,7 @@ setInterval(function() {
 					console.log("Spread: " + spread);
 					if(spread < 0.00000003){
 						//not worth it end
-						console.log("Not worth it, spread is to low...");
+						console.log("Not worth it, spread is too low...");
 						return;
 					}
 					//
