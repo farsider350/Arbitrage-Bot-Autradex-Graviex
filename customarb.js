@@ -23,7 +23,7 @@ autradex.allMarketsTicker(function(res){
 
 // Config Market
 setInterval(function() {
-	console.log("_________Beginning Arb Discovery For Raven vs Bitcoin_________");
+	console.log("_________Beginning Arb Discovery_________");
 	var theMarketAutx = customArbMarketAutx;
     var theMarketGrav = customArbMarketGrav;
 	var increase = customArbSpread;
