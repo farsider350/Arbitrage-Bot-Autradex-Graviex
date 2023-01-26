@@ -62,6 +62,9 @@ Example:
 
 For a more detailed example, please see "marketmaker.js" in the git directory.
 
+# Setup WSL to run on Windows
+https://msdn.microsoft.com/en-us/commandline/wsl/install_guide
+
 # Setup and Run the Arbitrage Bots
 Install:
 
