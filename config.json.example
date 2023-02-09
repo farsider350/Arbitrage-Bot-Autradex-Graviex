@@ -5,7 +5,8 @@
     "mmSecretKey": "Autradex Secret Key For Market Maker",
     "mmLoop": "Time in seconds between each check of orders",
     "mmMarket": "The Market on which you want to market make. ie dogebtc",
-    "mmSpread": "The order increase amount and final spread 0.00000001",
+    "mmSpread": "Stop when spread is lower or equal to",
+    "mmIncrease": "How much to increase and decrease orders from current
     "mmVol": "The volume you'd like to place as each trade",
 
     "///////// Arbitrage Bot Settings - You can use the same keys for each market":"",

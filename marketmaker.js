@@ -20,7 +20,7 @@ setInterval(function() {
 	console.log("_________________________________________________________");
 		//test market maker bot\
 	var theMarket = mmMarket;
-	var increase = mmSpread;
+	var increase = mmIncrease;
 	var volume = mmVol;
 
 	//CLOSE ALL ORDERS
@@ -43,7 +43,7 @@ setInterval(function() {
 					console.log("Buying At: " + buying.toFixed(9));
 					var spread = ((selling - increase) - (buying + increase)).toFixed(9);
 					console.log("Spread: " + spread);
-					if(spread < 0.00000003){
+					if(spread < mmSpread){
 						//not worth it end
 						console.log("Not worth it, spread is too low...");
 						return;
