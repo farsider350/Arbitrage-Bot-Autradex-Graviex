@@ -89,6 +89,8 @@ Available Bots as of latest commit:
     dgbbtcarb.js
     ltcbtcarb.js
     rvnbtcarb.js
+    genixbtcarb.js
+    genixdogearb.js
     customarb.js
 
     marketmaker.js
