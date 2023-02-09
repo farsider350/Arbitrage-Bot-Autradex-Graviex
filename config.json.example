@@ -1,5 +1,5 @@
 {
-    "///////// Market Maker Settings": "pm2 start marketmaker.js",
+    "///////// Custom Market Maker Settings": "pm2 start marketmaker.js",
 
     "mmAccessKey": "Autradex Access Key For Market Maker",
     "mmSecretKey": "Autradex Secret Key For Market Maker",
@@ -8,6 +8,24 @@
     "mmSpread": "Stop when spread is lower or equal to",
     "mmIncrease": "How much to increase and decrease orders from current
     "mmVol": "The volume you'd like to place as each trade",
+
+    "///////// Genix/BTC Market Maker Settings": "pm2 start genixbtcmarketmaker.js",
+
+    "mmAccessKeyGenixBtc": "Autradex Access Key For Market Maker",
+    "mmSecretKeyGenixBtc": "Autradex Secret Key For Market Maker",
+    "mmLoopGenixBtc": "Time in seconds between each check of orders",
+    "mmSpreadGenixBtc": "Stop when spread is lower or equal to",
+    "mmIncreaseGenixBtc": "How much to increase and decrease orders from current
+    "mmVolGenixBtc": "The volume you'd like to place as each trade",
+
+    "///////// Genix/Doge Market Maker Settings": "pm2 start genixdogemarketmaker.js",
+
+    "mmAccessKeyGenixDoge": "Autradex Access Key For Market Maker",
+    "mmSecretKeyGenixDoge": "Autradex Secret Key For Market Maker",
+    "mmLoopGenixDoge": "Time in seconds between each check of orders",
+    "mmSpreadGenixDoge": "Stop when spread is lower or equal to",
+    "mmIncreaseGenixDoge": "How much to increase and decrease orders from current
+    "mmVolGenixDoge": "The volume you'd like to place as each trade",
 
     "///////// Arbitrage Bot Settings - You can use the same keys for each market":"",
     "///////// but it is recommended to create them individually":"",

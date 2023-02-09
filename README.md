@@ -93,4 +93,6 @@ Available Bots as of latest commit:
     genixdogearb.js
     customarb.js
 
+    genixbtcmarketmaker.js
+    genixdogemarketmaker.js
     marketmaker.js

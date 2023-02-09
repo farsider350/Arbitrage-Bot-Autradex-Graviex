@@ -1,9 +1,9 @@
 var autradex = require("./autradex.js");
-const { mmAccessKey, mmSecretKey, mmLoop, mmMarket, mmSpread, mmVol } = require('./config.json');
+const { mmAccessKeyGenixDoge, mmSecretKeyGenixDoge, mmLoopGenixDoge, mmMarketGenixDoge, mmSpreadGenixDoge, mmVolGenixDoge } = require('./config.json');
 
-autradex.accessKey = mmAccessKey;
-autradex.secretKey = mmSecretKey;
-var loop = mmLoop;
+autradex.accessKey = mmAccessKeyGenixDoge;
+autradex.secretKey = mmSecretKeyGenixDoge;
+var loop = mmLoopGenixDoge;
 /*
 autradex.allMarketsTicker(function(res){
 	if(!res.error){
@@ -19,9 +19,9 @@ autradex.allMarketsTicker(function(res){
 setInterval(function() {
 	console.log("_________________________________________________________");
 
-	var theMarket = mmMarket;
-	var increase = mmIncrease;
-	var volume = mmVol;
+	var theMarket = dadoge;
+	var increase = mmIncreaseGenixDoge;
+	var volume = mmVolGenixDoge;
 
 	//CLOSE ALL ORDERS
 	//
@@ -38,12 +38,12 @@ setInterval(function() {
 			
 					var selling = parseFloat(res.asks[0].price);
 					var buying = parseFloat(res.bids[0].price);
-					console.log("[Market Making]");
+					console.log("[Market Making GENIX/BTC]");
 					console.log("Selling At: " + selling.toFixed(9));
 					console.log("Buying At: " + buying.toFixed(9));
 					var spread = ((selling - increase) - (buying + increase)).toFixed(9);
 					console.log("Spread: " + spread);
-					if(spread < mmSpread){
+					if(spread < mmSpreadGenixDoge){
 						//not worth it end
 						console.log("Not worth it, spread is too low...");
 						return;
